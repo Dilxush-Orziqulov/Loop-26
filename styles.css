@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+}    
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu p{
+    font-weight: 500;
+    font-size: 15px;
+    color: #050505;
+}
+
+.menu span{
+    color: #a0a0a0;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.box{
+    display: flex;
+}
+
+.form-box {
+    width: 550px;
+    background-color: #fff;
+    box-shadow: 0 1px 15px #dbd9d9;
+    margin: 0 30px 20px 0;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.form-box h1{
+    margin: 30px 20px;
+    color: #050505;
+}
+
+.form-box label{
+    color: #a0a0a0;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form{
+    padding: 0 20px;
+}
+
+.about-input{
+    display: flex;
+}
+
+.date-cvc-box{
+    display: flex;
+    margin-right: 10px;
+}
+
+.card_name-box input{
+    width: 240px;
+}
+
+.date-cvc-box input{
+    width: 100px;
+}
+
+input{
+    outline: none;
+    height: 30px;
+    border: 1px solid #cfcece;
+    color: #a5a4a4;
+    font-weight: 500;
+    font-size: 14px;
+   text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.price{
+    width: 450px;
+    background-color: #fff;
+    box-shadow: 0 1px 15px #dbd9d9;
+    height: 240px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price span{
+    font-weight: 500;
+    display: block;
+}
+
+.price-left{
+    display: flex;
+    align-items: center;
+}
+
+.img-box{
+    margin-right: 15px;
+    border: 1px solid #cfcece;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    position: relative;
+}
+
+img{
+    width: 30px;
+}
+
+.img-box::before{
+    content: "2";
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5f86ed;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.price-about{
+    border-top: 1px solid #dbd9d9; 
+    border-bottom: 1px solid #dbd9d9; 
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+.price-about div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.price-about div span{
+    font-size: 13px;
+}
+
+.price-box p{
+    color: #050505;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+section{
+    width: 500px;
+}
+
+.address{
+    width: 550px;
+    background-color: #fff;
+    box-shadow: 0 1px 15px #dbd9d9;
+    height: 235px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.address h1{
+    padding: 30px 0 20px;
+    margin: 0px 20px;
+    color: #050505;
+}
+
+
+.address div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 35px 20px;
+}
+
+.address div input{
+    margin-right: 10px;
+    width: 30px;
+}
+
+.shipping{
+    border-bottom: 1px solid #cfcece;
+    margin-bottom: 10px;
+}
+
+.address div label{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-box    {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.btn{
+    background-color: #5f86ed;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4472f1;
+}
+
+a{
+    text-decoration: none;
+    color: #5f86ed;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    .box{
+        flex-direction: column;
+    }
+
+    .price{
+        order: 1;
+    }
+
+    .form-box{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .form-box{
+        height: 300px;
+    }
+
+    .about-input{
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .date-cvc-box div{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .card_name-box{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .card_name-box input{
+        width: 510px;
+    }
+
+    .date-cvc-box input{
+        width: 245px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
